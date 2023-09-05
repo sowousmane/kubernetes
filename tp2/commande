@@ -1,0 +1,38 @@
+
+kubectl apply -f nginx-deployment.yml (v 1.18.0)
+
+kubectl get deploy
+
+kubectl get po
+
+kubectl get rs
+
+kubectl get rs -o wide
+
+kubectl apply -f nginx-deployment.yml (v latest)
+
+kubectl get rs -o wide
+
+kubectl delete -f nginx-deployment.yml
+
+kubectl run simple-webapp-color --image=mmumshad/simple-webapp-color --env="APP_COLOR=red" --restart=Never
+
+kubectl port-forward simple-webapp-color 8080:8080 --address 0.0.0.0 
+
+kubectl delete pod simple-webapp-color
+
+kubectl delete deployment nginx-deployment
+
+kubectl create deployment --image=nginx:1.18.0 nginx-deployment 
+
+kubectl get deploy -o wide
+
+kubectl scale --replicas=2 deployment/nginx-deployment
+
+kubectl get deploy -o wide
+
+kubectl set image deployment/nginx-deployment nginx=nginx
+
+kubectl get deploy -o wide
+
+kubectl get rs -o wide
