@@ -1,5 +1,5 @@
 
-Ecrivez un manifest namespace.yml qui crée un namespace nommé production et lancez la création de ce namespace à partir du manifest
+• Ecrivez un manifest namespace.yml qui crée un namespace nommé production et lancez la création de ce namespace à partir du manifest
 
 • Toutes vos prochaines ressources doivent être créées dans le namespace production
 
